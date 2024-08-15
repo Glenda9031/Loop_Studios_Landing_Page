@@ -74,6 +74,23 @@ nav ul,
     gap: 2rem;
 }
 
+nav ul li,
+.footer-left ul li {
+    list-style: none;
+}
+
+nav ul li a,
+.footer-left ul li a {
+    position: relative;
+    color: var(--white);
+    line-height: 1.5625rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25);
+}
+
+
+
 
 
 
