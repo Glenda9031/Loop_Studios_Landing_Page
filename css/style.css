@@ -89,6 +89,135 @@ nav ul li a,
     text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25);
 }
 
+nav ul li a:hover::after,
+.footer-left ul li a:hover::after,
+.footer-right ul li a:hover::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    display: block;
+    height: .125rem;
+    background-color: var(--white);
+    left: calc(50% - .75rem);
+    margin-top: .5rem;
+}
+
+.top-title {
+    max-width: 72.375rem;
+    padding: 0 1.5rem 0 1.5rem;
+    margin: 0 auto;
+}
+
+.top-title span {
+    display: block;
+    width: 100%;
+    max-width: 40.625rem;
+    font-family: var(--ff-2);
+    font-size: 4.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    border: .125rem solid var(--white);
+    padding: 2.5rem;
+    margin-top: 7.6875rem;
+}
+
+/* VR Section */
+.vr {
+    position: relative;
+    max-width: 72.375rem;
+    margin: 10rem auto 11.5rem auto;
+    display: flex;
+    padding: 0 1.5rem;
+}
+
+.vr picture {
+    max-width: 45.6875rem;
+    height: auto;
+    margin: 0;
+}
+
+.vr img {
+    width: 100%;
+    height: 100%;
+}
+
+.vr .vr-text {
+    position: absolute;
+    max-width: 31.25rem;
+    padding: 6rem 0 0 6rem;
+    background-color: var(--white);
+    margin-left: 8.125rem;
+    right: 1.5rem;
+    bottom: 0;
+}
+
+h2 {
+    font-family: var(--ff-2);
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5625rem;
+}
+
+.vr-text p {
+    line-height: 1.5625rem;
+    opacity: .5;
+}
+
+/* Creations Section */
+.creations {
+    position: relative;
+    max-width: 72.375rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 11.625rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#btn-see-all {
+    position: absolute;
+    right: 1.5rem;
+    padding: .8125rem 2.375rem;
+    border: .0625rem solid var(--black);
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .875rem;
+    letter-spacing: .3125rem;
+}
+
+#btn-see-all:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.gallery {
+    max-width: 100%;
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.875rem;
+    margin-top: 3.4375rem;
+}
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item:hover .overlay {
+    background: rgba(255, 255, 255, 0.8);
+    border: .125rem solid var(--black);
+}
+
+.gallery-item:hover span {
+    color: var(--black);
+}
+
+
+
+
 
 
 
