@@ -215,6 +215,229 @@ h2 {
     color: var(--black);
 }
 
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.gallery-item span {
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    margin: 0 2.5rem;
+    color: var(--white);
+    text-align: left;
+    font-family: var(--ff-2);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+}
+
+.footer-wrap {
+    display: flex;
+    max-width: 72.375rem;
+    margin: 0 auto;
+    padding: 2.75rem 1.5rem 2.0625rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left .logo {
+    margin-bottom: 1.5rem;
+}
+
+.footer-right ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-right ul li a {
+    position: relative;
+}
+
+.footer-right span {
+    line-height: 1.5625rem;
+    color: var(--white);
+    opacity: .5;
+}
+
+@media (max-width: 53.125rem) {
+    .creations {
+        padding-bottom: 10.625rem;
+    }
+
+    .creations:first-child {
+        grid-column: span 2;
+    }
+
+    #btn-see-all {
+        bottom: 0;
+        left: 1.5rem;
+        margin: 0 auto 6rem auto;
+    }
+
+    .creations h2 {
+        text-align: center;
+    }
+
+    .gallery {
+        justify-content: center;
+        gap: 1.875rem;
+    }
+}
+
+@media (max-width: 43.75rem) {
+    header {
+        background-image: url("../images/mobile/image-hero.jpg");
+    }
+
+    .top-wrap {
+        position: relative;
+        display: block;
+        padding: 2.5rem 0 0 0;
+        margin: 0 2.5rem;
+    }
+
+    .logo {
+        max-width: 9rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        height: 40.625rem;
+        top: 0;
+    }
+
+    nav ul li a {
+        font-family: var(--ff-2);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .top-title span {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        margin-top: 10.1875rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    /* VR Section */
+    .vr {
+        display: block;
+        margin: 6rem auto 6rem auto;
+    }
+
+    .vr picture img {
+        margin-bottom: 3rem;
+    }
+
+    .vr .vr-text {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        padding: 0 1.5rem;
+        margin-left: 0;
+        right: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: .875rem;
+    }
+
+    .vr-text h2 {
+        margin-bottom: 1rem;
+    }
+
+    .vr-text p {
+        text-align: center;
+    }
+
+    /* Creations Section */
+    .gallery {
+        margin: 2.125rem 0 0 0;
+        display: block;
+    }
+
+    .gallery-item {
+        margin: 0 0 1.5rem 0;
+    }
+
+    .gallery-item span {
+        bottom: 1.25rem;
+        margin: 0 1.25rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-wrap {
+        display: block;
+        padding: 3.5rem 1.5rem 3.5rem 1.5rem;
+    }
+
+    .footer-left .logo {
+        margin-bottom: 2rem;
+    }
+
+    .footer-left {
+        text-align: center;
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .footer-left ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-right ul {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-right span {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
 
 
 
